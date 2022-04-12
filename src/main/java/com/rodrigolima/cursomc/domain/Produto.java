@@ -30,7 +30,7 @@ public class Produto implements Serializable{
 	
 	@JsonBackReference
 	@ManyToMany
-	@JoinTable(name = "PRODUTO_ATEGORIA", 
+	@JoinTable(name = "PRODUTO_CATEGORIA", 
 			joinColumns = @JoinColumn(name = "produto_id"),
 			inverseJoinColumns = @JoinColumn(name = "categoria_id")
 			)
